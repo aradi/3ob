@@ -38,5 +38,5 @@ jobs:
     - name: Upload archive
       uses: actions/upload-artifact@4
       with:
-        name: ${{ ARCHIVE_NAME }}.tar.xz
-        path: ${{ ARCHIVE_NAME }}.tar.xz
+        name: ${{ env.ARCHIVE_NAME }}.tar.xz
+        path: ${{ env.ARCHIVE_NAME }}.tar.xz
