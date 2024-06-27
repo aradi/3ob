@@ -2,9 +2,6 @@ name: release
 
 on:
   push:
-  pull_request:
-  release:
-    types: [published]
 
 env:
   SKF_SET_NAME: "${{ github.event.repository.name }}"
@@ -17,7 +14,7 @@ jobs:
 
     steps:
 
-    - name: Checkout sk   set
+    - name: Checkout sk set
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
@@ -41,3 +38,11 @@ jobs:
       with:
         name: ${{ env.ARCHIVE_NAME }}.tar.xz
         path: ${{ env.ARCHIVE_NAME }}.tar.xz
+
+    - name: Create release
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: ${{ env.ARCHIVE_NAME }}.tar.xz
+
+
