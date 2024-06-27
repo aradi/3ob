@@ -16,7 +16,7 @@ jobs:
 
   steps:
 
-  - name: Checkout sk-set
+  - name: Checkout sk set
     uses: actions/checkout@4
     with:
       fetch-depth: 0
