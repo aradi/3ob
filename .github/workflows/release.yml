@@ -30,8 +30,10 @@ jobs:
         mkdir -p _build/${ARCHIVE_NAME}
         cp $(find . -maxdepth 1 -not -type 'd') _build/${ARCHIVE_NAME}
         cp skfiles/*.skf _build/${ARCHIVE_NAME}
-        cp extras/* _build/${ARCHIVE_NAME}
+        cp extras/{spinw.hsd,wfc.hsd} _build/${ARCHIVE_NAME}
         tar -C _build -c -v -J -f ${ARCHIVE_NAME}.tar.xz ${ARCHIVE_NAME}
+        cp extras/spinw.hsd ${ARCHIVE_NAME}.spinw.hsd
+        cp extras/wfc.hsd ${ARCHIVE_NAME}.wfc.hsd
 
     - name: Upload archive
       uses: actions/upload-artifact@v4
@@ -44,6 +46,11 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v')
       with:
         name: ${{ env.ARCHIVE_NAME }}
-        files: ${{ env.ARCHIVE_NAME }}.tar.xz
+        files: |
+          ${{ env.ARCHIVE_NAME }}.tar.xz
+          ${{ env.ARCHIVE_NAME }}.spinw.hsd
+          ${{ env.ARCHIVE_NAME }}.wfc.hsd
+        body: |
+          DFTB parametrization set ${{ env.ARCHIVE_NAME }}
 
 
