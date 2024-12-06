@@ -50,6 +50,6 @@ jobs:
           ${{ env.ARCHIVE_NAME }}.tar.xz
           ${{ env.ARCHIVE_NAME }}.spinw.hsd
           ${{ env.ARCHIVE_NAME }}.wfc.hsd
-        body_path: README
+        body_path: README.txt
 
 
