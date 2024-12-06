@@ -1,6 +1,4 @@
-======================================================================
-3ob-X-X
-======================================================================
+# 3ob-X-X
 
 This set of parameters is part of the Third-Order Parametrization for
 Organic and Biological Systems (3OB) has been specifically designed
@@ -23,6 +21,7 @@ zeta = 4.00 (gamma^h function exponent; DampXHExponent in DFTB+)
 ----------------------------------------------------------------------
 
 List of all atomic Hubbard derivatives (atomic units):
+
 Br = -0.0573
  C = -0.1492
 Ca = -0.0340
@@ -63,16 +62,19 @@ For the empirical halogend bond correction described in [JCTC2015-2]
 the following parameters are provided:
 
 DFTB3-D3(BJ) Parameters:
+
 a1 = 0.746
 a2 = 4.191
 s8 = 3.209
 
 General X-Correction parameters (AA and kcal/mol unit system):
+
 c1 = 7.761
 c2 = 0.050
 c3 = 4.518
 
 Element Pair Parameters (AA and kcal/mol unit system):
+
 O-Cl = 1.237
 O-Br = 1.099
 O-I  = 1.313
@@ -80,9 +82,7 @@ N-Cl = 1.526
 N-Br = 1.349
 N-I  = 1.521
 
-======================================================================
-Relevant Publications
-======================================================================
+## Relevant Publications
 
 [JCTC2013] J. Chem. Theory Comput., 2013, 9, 338-354.
 [JCTC2014] J. Chem. Theory Comput., 2014, 10, 1518–1537.
