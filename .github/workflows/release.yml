@@ -50,7 +50,6 @@ jobs:
           ${{ env.ARCHIVE_NAME }}.tar.xz
           ${{ env.ARCHIVE_NAME }}.spinw.hsd
           ${{ env.ARCHIVE_NAME }}.wfc.hsd
-        body: |
-          DFTB parametrization set ${{ env.ARCHIVE_NAME }}
+        body_path: README
 
 
