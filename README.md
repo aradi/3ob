@@ -20,8 +20,6 @@ calculations:
 zeta = 4.00 # (gamma^h function exponent; DampXHExponent in DFTB+)
 ```
 
----
-
 List of all atomic Hubbard derivatives (atomic units):
 
 ```
@@ -96,7 +94,7 @@ N-I  = 1.521
 
 ## Relevant Publications
 
-* [JCTC2013] J. Chem. Theory Comput., 2013, 9, 338-354.
-* [JCTC2014] J. Chem. Theory Comput., 2014, 10, 1518–1537.
-* [JCTC2015-1] J. Phys. Chem. B, 2015, 119, 1062–1082.
-* [JCTC2015-2] J. Chem. Theory Comput., 2015, 11, 332–342.
+* JCTC2013: J. Chem. Theory Comput., 2013, 9, 338-354.
+* JCTC2014: J. Chem. Theory Comput., 2014, 10, 1518–1537.
+* JCTC2015-1: J. Phys. Chem. B, 2015, 119, 1062–1082.
+* JCTC2015-2: J. Chem. Theory Comput., 2015, 11, 332–342.
