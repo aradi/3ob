@@ -11,17 +11,20 @@ C-H-N-O can be found in [JCTC2013], for P-S-* in [JCTC2014],
 for Mg-Zn-* in [JCTC2015-1], and for Na-F-K-Ca-Cl-Br-I-* in
 [JCTC2015-2].
 
-----------------------------------------------------------------------
+---
 
 The following parameter should be generally used for DFTB3/3OB
 calculations:
 
-zeta = 4.00 (gamma^h function exponent; DampXHExponent in DFTB+)
+```
+zeta = 4.00 # (gamma^h function exponent; DampXHExponent in DFTB+)
+```
 
-----------------------------------------------------------------------
+---
 
 List of all atomic Hubbard derivatives (atomic units):
 
+```
 Br = -0.0573
  C = -0.1492
 Ca = -0.0340
@@ -37,9 +40,11 @@ Na = -0.0454
  P = -0.14
  S = -0.11
 Zn = -0.03
+```
 
 Maximum angular momenta for calculation input files:
 
+```
 Br = "d"
  C = "p"
 Ca = "p"
@@ -55,36 +60,43 @@ Na = "p"
  P = "d"
  S = "d"
 Zn = "d"
+```
 
-----------------------------------------------------------------------
+---
 
 For the empirical halogend bond correction described in [JCTC2015-2]
 the following parameters are provided:
 
 DFTB3-D3(BJ) Parameters:
 
+```
 a1 = 0.746
 a2 = 4.191
 s8 = 3.209
+```
 
 General X-Correction parameters (AA and kcal/mol unit system):
 
+```
 c1 = 7.761
 c2 = 0.050
 c3 = 4.518
+```
 
 Element Pair Parameters (AA and kcal/mol unit system):
 
+```
 O-Cl = 1.237
 O-Br = 1.099
 O-I  = 1.313
 N-Cl = 1.526
 N-Br = 1.349
 N-I  = 1.521
+```
 
 ## Relevant Publications
 
-[JCTC2013] J. Chem. Theory Comput., 2013, 9, 338-354.
-[JCTC2014] J. Chem. Theory Comput., 2014, 10, 1518–1537.
-[JCTC2015-1] J. Phys. Chem. B, 2015, 119, 1062–1082.
-[JCTC2015-2] J. Chem. Theory Comput., 2015, 11, 332–342.
+* [JCTC2013] J. Chem. Theory Comput., 2013, 9, 338-354.
+* [JCTC2014] J. Chem. Theory Comput., 2014, 10, 1518–1537.
+* [JCTC2015-1] J. Phys. Chem. B, 2015, 119, 1062–1082.
+* [JCTC2015-2] J. Chem. Theory Comput., 2015, 11, 332–342.
