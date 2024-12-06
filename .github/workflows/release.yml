@@ -29,7 +29,8 @@ jobs:
       run: |
         mkdir -p _build/${ARCHIVE_NAME}
         cp $(find . -maxdepth 1 -not -type 'd') _build/${ARCHIVE_NAME}
-        cp skf/*.skf _build/${ARCHIVE_NAME}
+        cp skfiles/*.skf _build/${ARCHIVE_NAME}
+        cp extras/* _build/${ARCHIVE_NAME}
         tar -C _build -c -v -J -f ${ARCHIVE_NAME}.tar.xz ${ARCHIVE_NAME}
 
     - name: Upload archive
